@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { MedicineProvider } from './contexts/MedicineContext';
+import MedicineList from './components/MedicineList';
+import MedicineForm from './components/MedicineForm';
+import Cart from './components/Cart';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MedicineProvider>
+      <div>
+        <h1>Medicine Inventory Management</h1>
+        <MedicineForm />
+        <MedicineList />
+        <Cart />
+      </div>
+    </MedicineProvider>
   );
-}
+};
+
 
 export default App;

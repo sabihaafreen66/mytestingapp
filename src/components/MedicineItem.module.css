@@ -1,0 +1,22 @@
+/* MedicineItem.module.css */
+.item-container {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.item-name {
+  margin: 0;
+}
+
+.item-description {
+  margin: 5px 0;
+}
+
+.item-price {
+  font-weight: bold;
+}
+
+.item-button {
+  margin-right: 5px;
+}
